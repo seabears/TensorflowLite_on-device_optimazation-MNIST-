@@ -15,6 +15,7 @@ Google의 [TensorFlow Lite for Microcontrollers (TFLM)](https://github.com/tenso
 
 ## ⚙️ 주요 최적화 내용
 
+- `float32` → **int8**로 변경
 - `arm_convolve_s8` → **3x3 전용 커스텀 함수**로 변경
 - **SIMD 명령어 (`__SMLAD`, `__UQADD16` 등)** 적용
 - **루프 언롤링 (loop unrolling)** 으로 반복 연산 최소화
